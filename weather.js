@@ -1,6 +1,6 @@
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
-let fetch = require("node-fetch");
-let dotenv = require("dotenv");
+let express = require("express");
+const axios = require("axios");
 dotenv.config();
 const handler = async (event) => {
   const userIP = event.headers["x-forwarded-for"];
